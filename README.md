@@ -7,3 +7,4 @@ call, text, or email.
 
 This app is built with [React](http://facebook.github.io/react/) and [Node.js](https://nodejs.org/en/) and is based from [@ccoenraets](https://github.com/ccoenraets)' [directory-react-nodejs](https://github.com/ccoenraets/directory-react-nodejs).
 
+[View Demo (WIP)](https://wheretojam.herokuapp.com/)
