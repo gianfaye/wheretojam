@@ -103,7 +103,7 @@ var studios = [
       "instagram":"",
       "twitter":"",
       "avatar":"sample-img.jpg"
-   },
+   }
 ];
 
 exports.findAll = function (req, res, next) {
