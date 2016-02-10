@@ -1,6 +1,6 @@
 {
-  "name": "directory-react-nodejs",
-  "description": "React Node.js sample app",
+  "name": "wheretojam",
+  "description": "A directory app for band rehearsal studios",
   "version": "0.0.1",
   "dependencies": {
     "express": "^4.10.6"

@@ -1,14 +1,14 @@
-employeeService = (function () {
+studioService = (function () {
 
     var baseURL = "";
 
     // The public API
     return {
         findById: function(id) {
-            return $.ajax(baseURL + "/employees/" + id);
+            return $.ajax(baseURL + "/studios/" + id);
         },
         findByName: function(searchKey) {
-            return $.ajax({url: baseURL + "/employees", data: {name: searchKey}});
+            return $.ajax({url: baseURL + "/studios", data: {name: searchKey}});
         }
     };
 

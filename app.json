@@ -1,7 +1,7 @@
 {
-    "name": "React Employee Directory",
-    "description": "Sample App with React and Node.js",
-    "repository": "https://github.com/ccoenraets/directory-react-nodejs",
+    "name": "Band Rehearsal Studios Directory",
+    "description": "A directory app for band rehearsal studioss",
+    "repository": "https://bitbucket.org/gianfaye/wheretojam",
     "logo": "https://node-js-sample.herokuapp.com/node.svg",
     "keywords": ["node", "express", "react", "directory"]
 }
