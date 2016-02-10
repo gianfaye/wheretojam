@@ -1,6 +1,7 @@
 var studios = [
    {
       "id":0,
+      "username":"loudhouse",
       "studioName": "Loudhouse Band Rehearsal Studio",
       "address":"40, T. Gener, corner K-1st, Kamuning, Quezon City, 1103 Metro Manila",
       "city":"Quezon City",
@@ -22,6 +23,7 @@ var studios = [
    },
    {
       "id":1,
+      "username":"bluelight",
       "studioName": "Blue Light Recording And Rehearsal Studios",
       "address":"2nd Floor FORAB Building, 121 Kamuning Road, Diliman, Quezon City, 1103 Metro Manila",
       "city":"Quezon City",
@@ -43,6 +45,7 @@ var studios = [
    },
    {
       "id":2,
+      "username":"iconmusic",
       "studioName": "Icon Music Studios Philippines",
       "address":"165 Tomas Morato, L/G Thompson Square Building, Quezon City",
       "city":"Quezon City",
@@ -64,6 +67,7 @@ var studios = [
    },
    {
       "id":3,
+      "username":"towerofdoom",
       "studioName": "Tower of Doom Records",
       "address":"4th Floor Armon Bldg., Corner Anonas Rd. and Kamias Rd., Quezon City, 1211 Metro Manila",
       "city":"Quezon City",
@@ -85,6 +89,7 @@ var studios = [
    },
    {
       "id":4,
+      "username":"onair",
       "studioName": "On-Air Studio",
       "address":"2/F Stall 18 Cubao Expo, Gen. Romulo Avenue, Cubao, Quezon City, Metro Manila",
       "city":"Quezon City",

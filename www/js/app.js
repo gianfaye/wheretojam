@@ -16,7 +16,7 @@ var SearchBar = React.createClass({
     render: function () {
         return (
             <div className="bar bar-standard bar-header-secondary">
-                <input type="search" ref="searchKey" onChange={this.searchHandler} value={this.props.searchKey}/>
+                <input type="search" ref="searchKey" onChange={this.searchHandler} value={this.props.searchKey} placeholder="Type the area (e.g. Cubao)"/>
             </div>
 
         );
