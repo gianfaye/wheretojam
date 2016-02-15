@@ -72,7 +72,7 @@ var StudioPage = React.createClass({
     getInitialState: function() {
         return {studio: {}};
     },
-    componentDidMount: function() {
+    componentWillMount: function() {
         this.props.service.findById(this.props.studioId).done(function(result) {
             this.setState({studio: result});
         }.bind(this));
@@ -147,7 +147,7 @@ var App = React.createClass({
                 pages: [<HomePage key="list" searchHandler={this.searchHandler} searchKey={searchKey} studios={studios}/>]});
         }.bind(this));
     },
-    componentDidMount: function() {
+    componentWillMount: function() {
         router.addRoute('', function() {
             this.slidePage(<HomePage key="list" searchHandler={this.searchHandler} searchKey={this.state.searchKey} studios={this.state.studios}/>);
         }.bind(this));
