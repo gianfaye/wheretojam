@@ -13,7 +13,7 @@ var SearchBar = React.createClass({
     searchHandler: function() {
         var searchVal = this.refs.searchKey.getDOMNode().value;
         this.props.searchHandler(searchVal);
-        this.searchKey.value = searchVal;
+        this.props.searchKey.value = searchVal;
     },
     render: function () {
         return (
