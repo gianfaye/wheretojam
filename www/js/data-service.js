@@ -1,6 +1,6 @@
 studioService = (function () {
 
-    var baseURL = "https://wheretojam.herokuapp.com/";
+    var baseURL = "https://wheretojam.herokuapp.com";
 
     // The public API
     return {
