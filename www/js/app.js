@@ -11,12 +11,14 @@ var Header = React.createClass({
 
 var SearchBar = React.createClass({
     searchHandler: function() {
-        this.props.searchHandler(this.refs.searchKey.getDOMNode().value);
+        var searchVal = this.refs.searchKey.getDOMNode().value;
+        this.props.searchHandler(searchVal);
+        this.searchKey.value = searchVal;
     },
     render: function () {
         return (
             <div className="bar bar-standard bar-header-secondary">
-                <input type="search" ref="searchKey" onChange={this.searchHandler} value={this.props.searchKey} placeholder="Type the area (e.g. Cubao)"/>
+                <input type="search" ref="searchKey" onChange={this.searchHandler} placeholder="Type the area (e.g. Cubao)"/>
             </div>
 
         );
