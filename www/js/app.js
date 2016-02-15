@@ -30,7 +30,7 @@ var StudioListItem = React.createClass({
         return (
             <li className="table-view-cell media">
                 <a href={"#studios/" + this.props.studio.id}>
-                    <img className="media-object small pull-left" src={"pics/" + this.props.studio.avatar}/>
+                    <img className="media-object small pull-left" src={"pics/" + this.props.studio.pics + ".jpg"}/>
                     {this.props.studio.studioName} 
                     <p>{this.props.studio.address}</p>
                 </a>
@@ -84,7 +84,7 @@ var StudioPage = React.createClass({
                 <div className="card">
                     <ul className="table-view">
                         <li className="table-view-cell media">
-                            <img className="media-object big pull-left" src={"pics/" + this.state.studio.avatar}/>
+                            <img className="media-object big pull-left" src={"pics/" + this.state.studio.pics + ".jpg"}/>
                             <h1>{this.state.studio.studioName}</h1>
                             <p>{this.state.studio.address}</p>
                         </li>

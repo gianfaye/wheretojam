@@ -19,7 +19,7 @@ var studios = [
       "youtube":"",
       "instagram":"",
       "twitter":"",
-      "avatar":"sample-img.jpg"
+      "pics":"sample-img-1"
    },
    {
       "id":1,
@@ -41,7 +41,7 @@ var studios = [
       "youtube":"",
       "instagram":"",
       "twitter":"",
-      "avatar":"sample-img.jpg"
+      "pics":"sample-img-2"
    },
    {
       "id":2,
@@ -63,7 +63,7 @@ var studios = [
       "youtube":"",
       "instagram":"",
       "twitter":"",
-      "avatar":"sample-img.jpg"
+      "pics":"sample-img-3"
    },
    {
       "id":3,
@@ -85,7 +85,7 @@ var studios = [
       "youtube":"",
       "instagram":"",
       "twitter":"",
-      "avatar":"sample-img.jpg"
+      "pics":"sample-img-4"
    },
    {
       "id":4,
@@ -107,7 +107,7 @@ var studios = [
       "youtube":"",
       "instagram":"",
       "twitter":"",
-      "avatar":"sample-img.jpg"
+      "pics":"sample-img-5"
    }
 ];
 
