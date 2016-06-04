@@ -108,6 +108,28 @@ var studios = [
       "instagram":"",
       "twitter":"",
       "pics":"sample-img-5"
+   },
+   {
+      "id":5,
+      "username":"lorem",
+      "studioName": "Ipsum Studio",
+      "address":"2/F Stall 18 Cubao Expo, Gen. Romulo Avenue, Cubao, Quezon City, Metro Manila",
+      "city":"Quezon City",
+      "latitude":"14.628029",
+      "longitude":"121.036204",
+      "mobile":"0946 884 8300",
+      "landline":"4158776",
+      "email":"sample@studio.com",
+      "rehearsal":true,
+      "recording":false,
+      "schedule":"Weekdays, 3pm to 2am",
+      "status":"closed",
+      "website":"",
+      "facebook":"",
+      "youtube":"",
+      "instagram":"",
+      "twitter":"",
+      "pics":"sample-img-6"
    }
 ];
 
