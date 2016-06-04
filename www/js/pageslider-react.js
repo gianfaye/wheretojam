@@ -36,10 +36,11 @@ var PageSlider = {
             pages = this.state.pages,
             l = history.length,
             hash = window.location.hash,
-            position = "center";
+            position = "";
 
         if (l === 0) {
             history.push(hash);
+            position = "center";
         } else if (hash === history[l - 2]) {
             history.pop();
             position = "left";
