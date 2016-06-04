@@ -9,9 +9,11 @@ var Header = React.createClass({
     }
 });
 
+var searchVal = '';
+
 var SearchBar = React.createClass({
     searchHandler: function() {
-        var searchVal = this.refs.searchKey.getDOMNode().value;
+        searchVal = this.refs.searchKey.getDOMNode().value;
         this.props.searchHandler(searchVal);
         this.props.searchKey.value = searchVal;
     },
@@ -58,7 +60,7 @@ var HomePage = React.createClass({
     render: function () {
         return (
             <div className={"page " + this.props.position}>
-                <Header text="Where to Jam?" back="false"/>
+                <Header text="Where To Jam?" back="false"/>
                 <SearchBar searchKey={this.props.searchKey} searchHandler={this.props.searchHandler}/>
                 <div className="content">
                     <StudioList studios={this.props.studios}/>
@@ -80,11 +82,12 @@ var StudioPage = React.createClass({
     render: function () {
         return (
             <div className={"page " + this.props.position}>
-                <Header text="Studio" back="true"/>
+                <Header text="Where To Jam?" back="true"/>
                 <div className="card">
                     <ul className="table-view">
                         <li className="table-view-cell media">
                             <img className="media-object big pull-left" src={"pics/" + this.state.studio.pics + ".jpg"}/>
+                            <br/>
                             <h1>{this.state.studio.studioName}</h1>
                             <p>{this.state.studio.address}</p>
                         </li>
