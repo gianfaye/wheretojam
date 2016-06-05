@@ -28,10 +28,6 @@ html, body {
     display: table; /* 2 */
 }
 
-.content > .table-view:first-child {
-    margin-top: -2px;
-}
-
 .hidden {
     opacity: 0;
 }
@@ -88,7 +84,9 @@ input[type=search] {
 }
 
 .bar-header-secondary ~ .content{
-    padding-top: 0;
+    padding-top: 45px;
+    margin-top: -2px;
+    position: relative;
 }
 
 .bar input[type="search"] {
