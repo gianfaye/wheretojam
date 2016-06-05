@@ -71,8 +71,8 @@ header .title{
 }
 
 .bar-header-secondary{
-    padding: 10px;
-    height: 60px;
+    padding: 5px;
+    height: 50px;
     border: 0;
     background: #eee;
     top: 50px;
@@ -90,7 +90,7 @@ header .title{
     letter-spacing: 0.03rem;
     font: 16px 'Biko Regular', sans-serif;
     height: 35px;
-    padding: 12px 20px 10px;
+    padding: 12px 30px 10px;
     margin: 2px 0;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
@@ -103,13 +103,9 @@ header .title{
 
 header.bar .icon{
     color: #F7E6E5;
-    height: 35px;
-    width: 35px;
     margin: 7px 0;
-    font-size: 16px;
-    background: #9B4945;
+    font-size: 18px;
     text-align: center;
-    border-radius: 50px;
     padding: 9px 0;
     font-weight: bold;
 }
@@ -117,4 +113,11 @@ header.bar .icon{
 header.bar + .card{
     margin-top: 60px;
     padding: 5px;
+}
+
+.bar-header-secondary .icon-search{
+    position: absolute;
+    color: #aaa;
+    font-size: 16px;
+    padding: 11px 10px;
 }
