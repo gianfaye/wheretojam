@@ -1,10 +1,12 @@
 var Header = React.createClass({
     render: function () {
         return (
-            <header className="bar bar-nav">
-                <a href="#" className={"icon icon-left-nav pull-left" + (this.props.back==="true"?"":" hidden")}></a>
-                <h1 className="title">{this.props.text}</h1>
-            </header>
+            <div className="header-container">
+                <header className="bar bar-nav">
+                    <a href="#" className={"icon icon-left-nav pull-left" + (this.props.back==="true"?"":" hidden")}></a>
+                    <h1 className="title">{this.props.text}</h1>
+                </header>
+            </div>
         );
     }
 });
@@ -87,7 +89,6 @@ var StudioPage = React.createClass({
                     <ul className="table-view">
                         <li className="table-view-cell media">
                             <img className="media-object big pull-left" src={"pics/" + this.state.studio.pics + ".jpg"}/>
-                            <br/>
                             <h1>{this.state.studio.studioName}</h1>
                             <p>{this.state.studio.address}</p>
                         </li>

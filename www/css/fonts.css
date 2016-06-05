@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Biko Regular';
+    src: url('../fonts/Biko_Regular.eot');
+    src: url('../fonts/Biko_Regular.eot') format('embedded-opentype'),
+         url('../fonts/Biko_Regular.woff2') format('woff2'),
+         url('../fonts/Biko_Regular.woff') format('woff'),
+         url('../fonts/Biko_Regular.ttf') format('truetype'),
+         url('../fonts/Biko_Regular.svg#Biko_Regular') format('svg');
+}
+
+
+@font-face {
+    font-family: 'Biko Bold';
+    src: url('../fonts/Biko_Bold.eot');
+    src: url('../fonts/Biko_Bold.eot') format('embedded-opentype'),
+         url('../fonts/Biko_Bold.woff2') format('woff2'),
+         url('../fonts/Biko_Bold.woff') format('woff'),
+         url('../fonts/Biko_Bold.ttf') format('truetype'),
+         url('../fonts/Biko_Bold.svg#Biko_Bold') format('svg');
+}
