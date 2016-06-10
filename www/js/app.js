@@ -9,10 +9,9 @@ var Header = React.createClass({
     }
 });
 
-var searchVal = '';
-
 var SearchBar = React.createClass({
     searchHandler: function() {
+        var searchVal = '';
         searchVal = this.refs.searchKey.getDOMNode().value;
         this.props.searchHandler(searchVal);
         this.props.searchKey.value = searchVal;
@@ -146,12 +145,12 @@ var App = React.createClass({
             this.setState({
                 searchKey:searchKey,
                 studios: studios,
-                pages: [<HomePage key="list" searchHandler={this.searchHandler} searchKey={searchKey} studios={studios}/>]});
+                pages: [<HomePage key="list" searchHandler={this.searchHandler} searchKey={searchKey} studios={studios} position="center"/>]});
         }.bind(this));
     },
     componentWillMount: function() {
         router.addRoute('', function() {
-            this.slidePage(<HomePage key="list" searchHandler={this.searchHandler} searchKey={this.state.searchKey} studios={this.state.studios}/>);
+            this.slidePage(<HomePage key="list" searchHandler={this.searchHandler} searchKey={this.state.searchKey} studios={this.state.studios} position="center"/>);
         }.bind(this));
         router.addRoute('studios/:id', function(id) {
             this.slidePage(<StudioPage key="details" studioId={id} service={studioService}/>);
