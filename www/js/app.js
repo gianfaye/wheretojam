@@ -1,3 +1,7 @@
+window.onload = function() {
+  document.getElementById("searchBox").focus();
+};
+
 var Header = React.createClass({
     render: function () {
         return (
@@ -19,7 +23,7 @@ var SearchBar = React.createClass({
     render: function () {
         return (
             <div className="bar bar-standard bar-header-secondary">
-                <span className="icon icon-search"></span> <input type="search" ref="searchKey" placeholder="Search an area e.g. Cubao" onChange={this.searchHandler} value={this.searchHandler.searchVal}/>
+                <span className="icon icon-search"></span> <input type="search" ref="searchKey" id="searchBox" placeholder="Search an area e.g. Cubao" onChange={this.searchHandler} value={this.searchHandler.searchVal}/>
             </div>
 
         );
@@ -139,6 +143,7 @@ var App = React.createClass({
             searchKey: '',
             studios: []
         }
+        console.log(studios);
     },
     searchHandler: function(searchKey) {
         studioService.findByName(searchKey).done(function(studios) {

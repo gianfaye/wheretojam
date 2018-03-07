@@ -1,3 +1,52 @@
+var firebase = require("firebase");
+
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyA3cplylqxlbfA2wTQJcjzMmmlmms4tyOU",
+    authDomain: "wheretojam.firebaseapp.com",
+    databaseURL: "https://wheretojam.firebaseio.com",
+    projectId: "firebase-wheretojam",
+    storageBucket: "firebase-wheretojam.appspot.com",
+    messagingSenderId: "348639497044"
+};
+
+firebase.initializeApp(config);
+
+firebaseData = firebase.database();
+firebaseAuth = firebase.auth;
+
+var studioList = firebaseData.ref("/studios");
+var studios = [];
+
+studioList.on("value", function(snapshot) {
+    for (x in snapshot.val()) {
+        var xRef = firebaseData.ref("studios/" + x +"/");
+        xRef.once("value", function(xsnapshot) {
+            var studioItem = xsnapshot.val();
+            studios.push(studioItem);
+            //var name = studios["studioName"];
+        });
+    }
+});
+
+// var firebaseData = firebase.database();
+// var firebaseAuth = firebase.auth;
+
+// var studios = firebaseData.ref("/studios").orderByKey();
+// studios.once("value").then(function(snapshot) {
+// snapshot.forEach(function(childSnapshot) {
+//   var key = childSnapshot.key;
+//   var childData = childSnapshot.val();              
+
+//   var studioName = childSnapshot.val().studioName;
+//   var studioAddress = childSnapshot.val().address;
+
+//   });
+// });
+
+// console.log(studios);
+
+/*
 var studios = [
     {
         "id": 0,
@@ -1729,12 +1778,25 @@ var studios = [
         "schedule": ""
     }
 ];
+*/
 
 exports.findAll = function (req, res, next) {
     var name = req.query.name;
     if (name) {
         res.send(studios.filter(function(studio) {
-            return (studio.studioName + ' ' + studio.address).toLowerCase().indexOf(name.toLowerCase()) > -1;
+            return (studios.studioName + ' ' + studios.address).toLowerCase().indexOf(name.toLowerCase()) > -1;
+        }));
+    } 
+    else {
+        res.send(studios);
+    }
+};
+
+exports.findByName = function (req, res, next) {
+    var name = req.query.name;
+    if (name) {
+        res.send(studios.filter(function(studio) {
+            return (studios.studioName + ' ' + studios.address).toLowerCase().indexOf(name.toLowerCase()) > -1;
         }));
     } 
     else {
@@ -1745,4 +1807,9 @@ exports.findAll = function (req, res, next) {
 exports.findById = function (req, res, next) {
     var id = req.params.id;
     res.send(studios[id]);
+};
+
+exports.findByUsername = function (req, res, next) {
+    var username = req.params.username;
+    res.send(studios[username]);
 };

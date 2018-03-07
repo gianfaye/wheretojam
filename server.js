@@ -12,6 +12,7 @@ app.all('*', function(req, res, next) {
 });
 
 app.get('/studios', studios.findAll);
+//app.get('/studios/:id', studios.findById);
 app.get('/studios/:id', studios.findById);
 
 app.set('port', process.env.PORT || 5000);
